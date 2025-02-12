@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
@@ -7,3 +7,25 @@ app = Flask(__name__)
 def hello_world():  # put application's code here
     return 'Hello World!'
 
+@app.route('/expression/')
+def expressions():
+    color = 'pink'
+    animal_one = 'fox'
+    animal_two = 'dog'
+    orange_amount = 20
+    apple_amount = 30
+    donate_amount = 10
+    first_name = 'Tekalign'
+    last_name = 'Mesfin'
+
+    kwargs = {
+        'color':color,
+        'animal_one':animal_one,
+        'animal_two':animal_two,
+        'orange_amount':orange_amount,
+        'apple_amount':apple_amount,
+        'donate_amount':donate_amount,
+        'first_name':first_name,
+        'last_name':last_name
+    }
+    return render_template('expressions.html', **kwargs)

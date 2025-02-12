@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jinja2 Expressions</title>
+</head>
+<body>
+  <h2>Expressions in Jinja2</h2>
+
+  <h3>Interpolation</h3>
+
+  <p>
+    A quick {{ color }} {{ animal_one }} jumps over the lazy
+    {{ animal_two }}.
+  </p>
+
+  <h3>Addition and Subtraction</h3>
+
+  <p>
+    Alice bought {{ orange_amount }} oranges and {{ apple_amount }} apples.
+  </p>
+
+  <p>
+    In total, she has {{ orange_amount + apple_amount }} fruits.
+  </p>
+
+  <p>
+    She gave {{ donate_amount }} fruits to Bob.
+  </p>
+
+  <p>
+    Now she has {{ orange_amount + apple_amount - donate_amount }}
+    fruits remaining.
+  </p>
+
+  <h3>String Concatenation</h3>
+
+  <p>
+    A lot of people think {{ first_name + ' ' + last_name }} is the most
+    powerful Marvel character.
+  </p>
+</body>
+</html>
