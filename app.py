@@ -53,4 +53,4 @@ def data_structure():
         'car':car,
         'moons':moons
     }
-    return render_template('data_structures.html', )
+    return render_template('data_structures.html', **kwargs)
