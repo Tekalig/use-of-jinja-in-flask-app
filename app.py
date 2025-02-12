@@ -32,7 +32,7 @@ def expressions():
     }
     return render_template('expressions.html', **kwargs)
 
-@app.route('/data_structure/')
+@app.route('/data-structure/')
 def data_structure():
     movies = [
         'life is not fair',
@@ -59,3 +59,13 @@ def data_structure():
 def conditionals():
     company = ''
     return render_template('conditionals_basics.html', company=company)
+
+@app.route('/for-loops/')
+def for_loops():
+    planets = [
+        'teka',
+        'besu',
+        'hazi'
+    ]
+
+    return render_template('for_loop.html', planets=planets)
