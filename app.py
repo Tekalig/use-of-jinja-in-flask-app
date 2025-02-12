@@ -54,3 +54,8 @@ def data_structure():
         'moons':moons
     }
     return render_template('data_structures.html', **kwargs)
+
+@app.route('/conditional/')
+def conditionals():
+    company = ''
+    return render_template('conditionals_basics.html', company=company)
