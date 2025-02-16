@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conditional Statements</title>
+</head>
+<body>
+  <h1>Conditionals in Jinja2</h1>
+  <h2>Basic comparisons</h2>
+
+  {% if company == "apple"%}
+  <h3>Available Apple products</h3>
+  <ul>
+    <li>iPhone</li>
+    <li>iPad</li>
+    <li>iMac</li>
+  </ul>
+       {% elif company == "microsoft" %}
+  {% else %}
+  <p>No {{ company }} products available.</p>
+  {% endif %}
+</body>
+</html>
