@@ -69,3 +69,13 @@ def for_loops():
     ]
 
     return render_template('for_loop.html', planets=planets)
+
+@app.route('/for-loop-conditional/')
+def for_loop_conditionals():
+    os = {
+        'besu':'Windows',
+        'teka':'MacOS',
+        'hazi':'Linux'
+    }
+
+    return  render_template('loops_and_conditionals.html', user_os=os)
